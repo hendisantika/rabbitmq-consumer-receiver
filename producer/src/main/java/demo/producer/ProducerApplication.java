@@ -55,7 +55,7 @@ public class ProducerApplication implements CommandLineRunner {
 	private Sender sender;
 
 	@Override
-	public void run(String... args) throws Exception {
+    public void run(String... args) {
 		sender.sendToRabbitmq(new Foo(), new Bar());
 	}
 }
